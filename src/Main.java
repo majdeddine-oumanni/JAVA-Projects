@@ -72,14 +72,13 @@ public class Main {
     }
 
     public static void main(String[] args){
-        Scanner fnum = new Scanner(System.in);
-        System.out.print("entre num 1: ");
-        double num1 = fnum.nextDouble();
-        Scanner snum = new Scanner(System.in);
-        System.out.print("entre num 2: ");
-        double num2 = snum.nextDouble();
 
         while (true){
+            Scanner num = new Scanner(System.in);
+            System.out.print("entre nombre 1: ");
+            double num1 = num.nextDouble();
+            System.out.print("entre nombre 2: ");
+            double num2 = num.nextDouble();
             Scanner chnum = new Scanner(System.in);
             System.out.println("  1. pour L'addition");
             System.out.println("  2. pour la Soustraction");
