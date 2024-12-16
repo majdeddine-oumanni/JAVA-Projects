@@ -65,10 +65,14 @@ public class Main {
     }
     public static void squareRoot(){
         oneNumber();
-        double sqrt;
-        sqrt = Math.sqrt(number);
-        String result = String.format(" \n √%.2f = %.2f  \n ", number, sqrt);
-        System.out.println(result);
+        if (number < 0){
+            System.out.println("Error");
+        }else{
+            double sqrt;
+            sqrt = Math.sqrt(number);
+            String result = String.format(" \n √%.2f = %.2f  \n ", number, sqrt);
+            System.out.println(result);
+        }
     }
 
 
